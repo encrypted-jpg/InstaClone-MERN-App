@@ -14,19 +14,17 @@ const userSchema = mongoose.Schema({
     dob: {
         type: Date
     },
-    followerCnt: {
+    followersCnt: {
         type: Number
     },
     followers: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
+        type: String
     }],
     followingCnt: {
         type: Number
     },
     following: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
+        type: String
     }],
     posts: [{
         type: mongoose.Schema.Types.ObjectId,
